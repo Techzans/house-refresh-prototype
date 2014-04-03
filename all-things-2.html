@@ -23,17 +23,6 @@
 </head>
 <body>
   <div>
-    <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
-      <div class="w-container">
-        <a class="w-nav-brand brand" href="#"></a>
-        <nav class="w-nav-menu" role="navigation"><a class="w-nav-link navlink" href="#">Home</a><a class="w-nav-link navlink" href="#">About</a><a class="w-nav-link navlink" href="#">Contact</a>
-        </nav>
-        <div class="w-nav-button">
-          <div class="w-icon-nav-menu"></div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="main-sec">
     <div class="w-container">
       <div class="test-prog-bar">
@@ -49,14 +38,15 @@
           <div class="bar small"></div>
         </div>
         <h6>Step 2 of 3 / 60%</h6>
-        <p class="small-text">Approximate time 40 mins</p>
+        <p class="small-text">Approximate time:</p>
+        <p class="small-text">20 minutes</p>
       </div>
       <div class="chunk chuck-w-padding first-chuck" id="select-renovations">
-        <h1>1. select renovations</h1>
+        <h1>How would you like to improve your house?</h1>
         <p>Give us a few details about the type of improvement you want done.</p>
         <div class="w-form">
           <form class="form" name="email-form" data-name="Email Form">
-            <label class="label" for="name">What do you want done?</label>
+            <label class="label" for="name">Pick an improvement or search for your own:</label>
             <div class="w-row">
               <div class="w-col w-col-3 item-col"><a class="button btn-outline alt-button-outline fence-btn" href="#">Fencing</a>
               </div>
@@ -78,8 +68,8 @@
         </div>
       </div>
       <div class="chunk chuck-w-padding" id="enter-address">
-        <h1>2. enter your address</h1>
-        <p>Find out what renovations you can make to your property and access grants that you’re eligible for to improve your home. Enter your address below so we can verify your zone.</p>
+        <h1>Enter your address</h1>
+        <p>We will use this information to help you plan out your changes.</p>
         <div class="w-form">
           <form class="form" name="email-form" data-name="Email Form">
             <label class="label" for="name">Your address:</label>
@@ -97,17 +87,16 @@
     <div class="w-container container">
       <div class="w-clearfix">
         <div class="chunk chuck-w-padding" id="address-confirmed">
-          <h1>2. cool facts about your place</h1>
+          <h1>This is what we know about your home</h1>
           <h3 class="alt-h1">555 Saint Mary's San Antonio, TX&nbsp;78204</h3>
-          <p>Here's a little info about your house what zone it’s in, a few basic rules.</p>
           <div class="w-row about-house-row">
             <div class="w-col w-col-5">
               <img class="overlay-img" src="images/overlay.jpg" alt="5331ba9fee53fb987a000a65_overlay.jpg">
             </div>
             <div class="w-col w-col-7">
-              <p><strong>History</strong>: Located in the heart of downtown San Antonio, Casa Navarro State Historic Site celebrates the life of rancher, merchant, and Texas patriot José Antonio Navarro at his original 1850's limestone and adobe home.
+              <p><strong>Your home has unique historic architecture.</strong> It features unique window stylings and parapets designed in the last century.
                 <br>
-                <br><strong>Historic Zone:</strong> King William
+                <br><strong>You live in a Historic District.</strong> The King William Historic Zone has been home to San Antonians since 1793. Many of its homes were built in the mid-19th century.
                 <br>
                 <br><strong>Rules</strong>: X, Y, Z</p>
             </div>
@@ -279,25 +268,29 @@
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
+
   <script type="text/javascript">
   $(".roof-btn").click(function(){
     $(".roof").fadeToggle("fast","swing");
     $('.roof-btn').toggleClass("toggle-on");
   }); 
   </script>
-    <script type="text/javascript">
+
+  <script type="text/javascript">
   $(".fence-btn").click(function(){
     $(".fence").fadeToggle("fast","swing");
     $('.fence-btn').toggleClass("toggle-on");
   }); 
   </script>
-    <script type="text/javascript">
+
+  <script type="text/javascript">
   $(".repairs-btn").click(function(){
     $(".chimney").fadeToggle("fast","swing");
     $('.repairs-btn').toggleClass("toggle-on");
   }); 
   </script>
-    <script type="text/javascript">
+
+  <script type="text/javascript">
   $(".addition-btn").click(function(){
     $(".addition").fadeToggle("fast","swing");
     $('.addition-btn').toggleClass("toggle-on");

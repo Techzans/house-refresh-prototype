@@ -6,12 +6,11 @@ body {
 }
 h1 {
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: Montserrat, sans-serif;
-  font-size: 40px;
-  line-height: 44px;
+  font-size: 50px;
+  line-height: 60px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 h2 {
   margin-top: 20px;
@@ -169,7 +168,7 @@ p {
   text-transform: none;
 }
 .form {
-  padding-top: 32px;
+  padding-top: 20px;
 }
 .alt-h1 {
   font-family: Montserrat, sans-serif;
@@ -216,6 +215,7 @@ p {
 }
 .small-text {
   font-size: 16px;
+  line-height: 16px;
 }
 .grant-total {
   padding: 11px;
@@ -239,6 +239,7 @@ p {
   position: fixed;
   width: 17%;
   padding-top: 43px;
+  padding-right: 30px;
 }
 .main-sec {
   padding-top: 81px;
@@ -266,33 +267,39 @@ p {
 }
 .house, .roof, .fence, .addition, .chimney {
   position: absolute;  
-  }
+}
 .roof, .fence, .addition, .chimney {
   display: none;
 }
 .house {
-    width: 148px;
+  width: 148px;
 }
 .roof {
-    left: -5px;
-    top: -1px;
-    width: 158px;
+  left: -5px;
+  top: -1px;
+  width: 158px;
 }
 .fence {
-    bottom: 0;
-    left: 6px;
-    width: 136px;
+  bottom: 0;
+  left: 6px;
+  width: 136px;
 }
 .addition {
-    bottom: 5px;
-    left: 147px;
-    width: 50px;
+  bottom: 5px;
+  left: 147px;
+  width: 50px;
 }
 .chimney {
-    left: 15px;
-    top: 4px;
-    width: 34px;
+  left: 15px;
+  top: 4px;
+  width: 34px;
 }
-.roof-btn {position: relative;}
-.switch-btns {padding-left: 6px;}
-.switch-btns a {margin-right: 4px;}
+.roof-btn {
+  position: relative;
+}
+.switch-btns {
+  padding-left: 6px;
+}
+.switch-btns a {
+  margin-right: 4px;
+}
