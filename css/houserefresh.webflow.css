@@ -295,6 +295,4 @@ p {
 .roof-btn {position: relative;}
 .switch-btns {padding-left: 6px;}
 .switch-btns a {margin-right: 4px;}
-.bar.small.step-0 {width: 0;}
-.bar.small.step-1 {width: 50%;}
-.bar.small.step-2 {width: 100%;}
+.lowercase-h1 {text-transform: none;}
