@@ -35,11 +35,10 @@
         </div>        
         <h2>Progress</h2>
         <div class="bar">
-          <div class="bar small"></div>
+	  <div class="bar small waypoint"></div>
         </div>
-        <h6>Step 2 of 3 / 60%</h6>
-        <p class="small-text">Approximate time:</p>
-        <p class="small-text">20 minutes</p>
+	<h6 class="progress-percent">0%</h6>
+        <p class="small-text">Approximate time 40 mins</p>
       </div>
       <div class="chunk chuck-w-padding first-chuck" id="select-renovations">
         <h1>How would you like to improve your house?</h1>
@@ -67,7 +66,7 @@
           </div>
         </div>
       </div>
-      <div class="chunk chuck-w-padding" id="enter-address">
+      <div class="chunk chuck-w-padding ha-waypoint" id="enter-address" data-animate-down="17%" data-animate-up="0%">>
         <h1>Enter your address</h1>
         <p>We will use this information to help you plan out your changes.</p>
         <div class="w-form">
@@ -86,7 +85,7 @@
     </div>
     <div class="w-container container">
       <div class="w-clearfix">
-        <div class="chunk chuck-w-padding" id="address-confirmed">
+        <div class="chunk chuck-w-padding ha-waypoint" id="address-confirmed" data-animate-down="34%" data-animate-up="17%"
           <h1>This is what we know about your home</h1>
           <h3 class="alt-h1">555 Saint Mary's San Antonio, TX&nbsp;78204</h3>
           <div class="w-row about-house-row">
@@ -103,7 +102,7 @@
           </div><a class="btn-fill" href="#renovation-rules">Next</a>
         </div>
       </div>
-      <div class="chunk chuck-w-padding" id="renovation-rules">
+      <div class="chunk chuck-w-padding ha-waypoint" id="renovation-rules" data-animate-down="50%" data-animate-up="34%">>
         <h1>These are the guidelines for your renovation project</h1>
         <div class="ren-rule">
           <h3><strong>Roof</strong></h3>
@@ -150,7 +149,7 @@
           </div>
         </div>
       </div>
-      <div class="chunk chuck-w-padding" id="grants-available">
+      <div class="chunk chuck-w-padding ha-waypoint" id="grants-available" data-animate-down="67%" data-animate-up="50%">
         <h1>There are grants available to help you</h1>
         <h2 class="grant-total">$6000 Total Available</h2>
         <div class="w-row">
@@ -177,7 +176,7 @@
           </div>
         </div>
       </div>
-      <div class="chunk chuck-w-padding" id="labor-available">
+      <div class="chunk chuck-w-padding ha-waypoint" id="labor-available" data-animate-down="84%" data-animate-up="67%">
         <h1>This labor is available to build your renovation</h1>
         <div class="w-row">
           <div class="w-col w-col-6">
@@ -197,8 +196,8 @@
           </div>
         </div>
       </div>
-      <div class="chunk chuck-w-padding" id="summary">
-        <h1>These are your next stepsds</h1>
+      <div class="chunk chuck-w-padding ha-waypoint" id="summary" data-animate-down="100%" data-animate-up="84%">
+        <h1>These are your next steps</h1>
         <h2 class="alt-h1">555 Saint Mary's San Antonio, TX&nbsp;78204</h2>
         <div class="w-row">
           <div class="w-col w-col-4">
@@ -269,35 +268,39 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
 
+  <script type="text/javascript" src="js/jquery-waypoints/waypoints.min.js"></script>
   <script type="text/javascript">
-  $(".roof-btn").click(function(){
-    $(".roof").fadeToggle("fast","swing");
-    $('.roof-btn').toggleClass("toggle-on");
-  }); 
-  </script>
+  $(document).ready(function() {
+     $(".roof-btn").click(function(){
+      $(".roof").fadeToggle("fast","swing");
+      $('.roof-btn').toggleClass("toggle-on");
+    });
+    $(".fence-btn").click(function(){
+      $(".fence").fadeToggle("fast","swing");
+      $('.fence-btn').toggleClass("toggle-on");
+    });
+    $(".repairs-btn").click(function(){
+      $(".chimney").fadeToggle("fast","swing");
+      $('.repairs-btn').toggleClass("toggle-on");
+    });
+    $(".addition-btn").click(function(){
+      $(".addition").fadeToggle("fast","swing");
+      $('.addition-btn').toggleClass("toggle-on");
+    });
+    $('.ha-waypoint').waypoint(function(direction) {
 
-  <script type="text/javascript">
-  $(".fence-btn").click(function(){
-    $(".fence").fadeToggle("fast","swing");
-    $('.fence-btn').toggleClass("toggle-on");
-  }); 
-  </script>
-
-  <script type="text/javascript">
-  $(".repairs-btn").click(function(){
-    $(".chimney").fadeToggle("fast","swing");
-    $('.repairs-btn').toggleClass("toggle-on");
-  }); 
-  </script>
-
-  <script type="text/javascript">
-  $(".addition-btn").click(function(){
-    $(".addition").fadeToggle("fast","swing");
-    $('.addition-btn').toggleClass("toggle-on");
-  }); 
-  </script>
-
- 
+      var $el = $(this);
+      var percentage = $el.data(direction === 'down' ? 'animateDown' : 'animateUp');
+      $('.waypoint').animate({
+	width: percentage,
+      }, {
+	duration: 300,
+      });
+      $('.progress-percent').html(percentage)
+      // $('.waypoint').removeClass("step-0 step-1").addClass(animClass);
+    }, { offset: '70%' });
+  });
+</script>
 
 </body>
 </html>

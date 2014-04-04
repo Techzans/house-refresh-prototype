@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Tue Apr 01 2014 22:32:05 GMT+0000 (UTC) -->
+<html data-wf-site="532cb8f39ff60e067100012a">
+<head>
+  <meta charset="utf-8">
+  <title>House Refresh - All Things Color</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/houserefresh.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+	families: ["Montserrat:400,700","Open Sans:300,400,600,700,800"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+</head>
+<style type="text/css">
+.button.btn-outline.alt-button-outline.fence-btn.toggle-on, .button.btn-outline.fence-btn:hover {
+    background-color: #0074D9;
+    border-color: #0074D9;
+}
+.button.btn-outline.alt-button-outline.roof-btn.toggle-on, .button.btn-outline.roof-btn:hover {
+    background-color: #CF1B41;
+    border-color: #CF1B41;
+}
+.button.btn-outline.alt-button-outline.repairs-btn.toggle-on, .button.btn-outline.repairs-btn:hover {
+    background-color: #69579C;
+    border-color: #69579C;
+}
+.button.btn-outline.alt-button-outline.addition-btn.toggle-on, .button.btn-outline.addition-btn:hover {
+    background-color: #3D9970;
+    border-color: #3D9970;
+}
+</style>
+<body>
+  <div>
+    <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+      <div class="w-container">
+	<a class="w-nav-brand brand" href="#"></a>
+	<nav class="w-nav-menu" role="navigation"><a class="w-nav-link navlink" href="#">Home</a><a class="w-nav-link navlink" href="#">About</a><a class="w-nav-link navlink" href="#">Contact</a>
+	</nav>
+	<div class="w-nav-button">
+	  <div class="w-icon-nav-menu"></div>
+	</div>
+      </div>
+    </div>
+  </div>
+  <div class="main-sec">
+    <div class="w-container">
+      <div class="test-prog-bar">
+	<div class="house-block">
+	  <img class="house" src="images/house.png">
+	  <img class="roof" src="images/color-house-parts/roof.png">
+	  <img class="fence" src="images/color-house-parts/fence.png">
+	  <img class="addition" src="images/color-house-parts/addition.png">
+	  <img class="chimney" src="images/color-house-parts/chimney.png">
+	</div>
+	<h2>Progress</h2>
+	<div class="bar">
+	  <div class="bar small waypoint"></div>
+	</div>
+	<h6 class="progress-percent">0%</h6>
+	<p class="small-text">Approximate time 40 mins</p>
+      </div>
+      <div class="chunk chuck-w-padding first-chuck" id="select-renovations">
+	<h1>1. select renovations</h1>
+	<p>Give us a few details about the type of improvement you want done.</p>
+	<div class="w-form">
+	  <form class="form" name="email-form" data-name="Email Form">
+	    <label class="label" for="name">What do you want done?</label>
+	    <div class="w-row">
+	      <div class="w-col w-col-3 item-col"><a class="button btn-outline alt-button-outline fence-btn" href="#">Fencing</a>
+	      </div>
+	      <div class="w-col w-col-3 item-col"><a class="button btn-outline alt-button-outline roof-btn" href="#">Roofing</a>
+	      </div>
+	      <div class="w-col w-col-3 item-col"><a class="button btn-outline alt-button-outline repairs-btn" href="#">Chimney</a>
+	      </div>
+	      <div class="w-col w-col-3 item-col"><a class="button btn-outline alt-button-outline addition-btn" href="#">Additions</a>
+	      </div>
+	    </div>
+	    <input class="w-input field" type="text" placeholder="Or something else? e.g. paint house, install fence, add garage" name="name" data-name="Name"></input><a class="btn-fill" href="#enter-address">next</a>
+	  </form>
+	  <div class="w-form-done">
+	    <p>Thank you! Your submission has been received!</p>
+	  </div>
+	  <div class="w-form-fail">
+	    <p>Oops! Something went wrong while submitting the form :(</p>
+	  </div>
+	</div>
+      </div>
+      <div class="chunk chuck-w-padding ha-waypoint" id="enter-address" data-animate-down="17%" data-animate-up="0%">
+	<h1>2. enter your address</h1>
+	<p>Find out what renovations you can make to your property and access grants that you’re eligible for to improve your home. Enter your address below so we can verify your zone.</p>
+	<div class="w-form">
+	  <form class="form" name="email-form" data-name="Email Form">
+	    <label class="label" for="name">Your address:</label>
+	    <input class="w-input field" type="text" placeholder="Enter your address" name="name" data-name="Name"></input><a class="btn-fill" href="#address-confirmed">submit</a>
+	  </form>
+	  <div class="w-form-done">
+	    <p>Thank you! Your submission has been received!</p>
+	  </div>
+	  <div class="w-form-fail">
+	    <p>Oops! Something went wrong while submitting the form :(</p>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <div class="w-container container">
+      <div class="w-clearfix">
+	<div class="chunk chuck-w-padding ha-waypoint" id="address-confirmed" data-animate-down="34%" data-animate-up="17%">
+	  <h1>2. cool facts about your place</h1>
+	  <h3 class="alt-h1">555 Saint Mary's San Antonio, TX&nbsp;78204</h3>
+	  <p>Here's a little info about your house what zone it’s in, a few basic rules.</p>
+	  <div class="w-row about-house-row">
+	    <div class="w-col w-col-5">
+	      <img class="overlay-img" src="images/overlay.jpg" alt="5331ba9fee53fb987a000a65_overlay.jpg">
+	    </div>
+	    <div class="w-col w-col-7">
+	      <p><strong>History</strong>: Located in the heart of downtown San Antonio, Casa Navarro State Historic Site celebrates the life of rancher, merchant, and Texas patriot José Antonio Navarro at his original 1850's limestone and adobe home.
+		<br>
+		<br><strong>Historic Zone:</strong> King William
+		<br>
+		<br><strong>Rules</strong>: X, Y, Z</p>
+	    </div>
+	  </div><a class="btn-fill" href="#renovation-rules">Next</a>
+	</div>
+      </div>
+      <div class="chunk chuck-w-padding ha-waypoint" id="renovation-rules" data-animate-down="50%" data-animate-up="34%">
+	<h1>4. Renovation rules</h1>
+	<div class="ren-rule">
+	  <h3><strong>Roof</strong></h3>
+	  <ul>
+	    <li class="list-item">Replace missing or damaged sidingwith in-kind materials.</li>
+	    <li class="list-item">Repair or replace rotted sills and caulk around window and door frames.</li>
+	    <li class="list-item">Replace missing balustrades and rotted wood decking</li>
+	  </ul>
+	</div>
+	<div class="ren-rule">
+	  <h3><strong>Masonry and Stucco</strong></h3>
+	  <ul>
+	    <li class="list-item">Remove stucco from masonry surfaces where historically appropriate.</li>
+	    <li class="list-item">Avoid painting historically unpainted surfaces.&nbsp;</li>
+	    <li class="list-item">Repoint masonry with compatible mortar and matching joint profile and composition</li>
+	  </ul>
+	</div>
+	<div class="ren-rule">
+	  <h3><strong>Foundations</strong></h3>
+	  <ul>
+	    <li class="list-item">Concrete piers are a suitable replacement for cedar when original piers are deteriorated beyond repair.</li>
+	    <li class="list-item">Many limestone foundations can be restored rather than replaced.</li>
+	  </ul>
+	</div>
+	<h2 class="grant-total permits-req">Permits Required</h2>
+	<div class="w-row">
+	  <div class="w-col w-col-4">
+	    <div class="grant-blcok">
+	      <h3 class="grant-h3 top-grant-h3">ABC PERMIT</h3>
+	      <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;</p>
+	    </div><a class="btn-fill grant-btn" href="#grants-available">apply</a>
+	  </div>
+	  <div class="w-col w-col-4">
+	    <div class="grant-blcok">
+	      <h3 class="grant-h3 top-grant-h3">XYZ PERMIT</h3>
+	      <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+	    </div><a class="btn-fill grant-btn" href="step-1-result.html">apply</a>
+	  </div>
+	  <div class="w-col w-col-4">
+	    <div class="grant-blcok">
+	      <h3 class="grant-h3 top-grant-h3">DEF PERMIT</h3>
+	      <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+	    </div><a class="btn-fill grant-btn" href="step-1-result.html">apply</a>
+	  </div>
+	</div>
+      </div>
+      <div class="chunk chuck-w-padding ha-waypoint" id="grants-available" data-animate-down="67%" data-animate-up="50%">
+	<h1>5. grants available</h1>
+	<h2 class="grant-total">$6000 Total Available</h2>
+	<div class="w-row">
+	  <div class="w-col w-col-4">
+	    <div class="grant-blcok">
+	      <h3 class="grant-h3 top-grant-h3">ABC GRANT</h3>
+	      <h3 class="grant-h3">$2000</h3>
+	      <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.&nbsp;</p>
+	    </div><a class="btn-fill grant-btn" href="#labor-available">apply</a>
+	  </div>
+	  <div class="w-col w-col-4">
+	    <div class="grant-blcok">
+	      <h3 class="grant-h3 top-grant-h3">XYZ GRANT</h3>
+	      <h3 class="grant-h3">$2000</h3>
+	      <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.&nbsp;</p>
+	    </div><a class="btn-fill grant-btn" href="step-1-result.html">apply</a>
+	  </div>
+	  <div class="w-col w-col-4">
+	    <div class="grant-blcok">
+	      <h3 class="grant-h3 top-grant-h3">DEF GRANT</h3>
+	      <h3 class="grant-h3">$1000</h3>
+	      <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+	    </div><a class="btn-fill grant-btn" href="step-1-result.html">apply</a>
+	  </div>
+	</div>
+      </div>
+      <div class="chunk chuck-w-padding ha-waypoint" id="labor-available" data-animate-down="84%" data-animate-up="67%">
+	<h1>6. labor available</h1>
+	<div class="w-row">
+	  <div class="w-col w-col-6">
+	    <div class="grant-blcok">
+	      <h3 class="grant-h3 top-grant-h3">JOE CONSTRUCTION</h3>
+	      <h3 class="grant-h3">$2000</h3>
+	      <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.&nbsp;</p>
+	    </div><a class="btn-fill grant-btn" href="#summary">send request</a>
+	  </div>
+	  <div class="w-col w-col-6">
+	    <div class="grant-blcok">
+	      <h3 class="grant-h3 top-grant-h3">STAR VOLUNTEER</h3>
+	      <h3 class="grant-h3">4/12/2014</h3>
+	      <p class="small-text">S.T.A.R. (Students Together Achieving Revitalization) is a partnership between the Office of Historic Preservation, the UTSA College of Architecture, San Antonio College, the Historic Preservation Association (HPA), and local contractors
+		to provide minor exterior home repairs and maintenance to homeowners within local historic districts.&nbsp;</p>
+	    </div><a class="btn-fill grant-btn" href="step-1-result.html">send request</a>
+	  </div>
+	</div>
+      </div>
+      <div class="chunk chuck-w-padding ha-waypoint" id="summary" data-animate-down="100%" data-animate-up="84%">
+	<h1>summary</h1>
+	<h2 class="alt-h1">555 Saint Mary's San Antonio, TX&nbsp;78204</h2>
+	<div class="w-row">
+	  <div class="w-col w-col-4">
+	    <img src="images/house-color.png" alt="53321879f335a68211000248_house-color.png">
+	  </div>
+	  <div class="w-col w-col-8">
+	    <div class="ren-rule">
+	      <h3><strong>Project details:&nbsp;</strong></h3>
+	      <ul>
+		<li class="list-item"><strong>Build a Fence</strong>
+		</li>
+		<li class="list-item"><strong>Material</strong>: Wrought Iron</li>
+		<li class="list-item"><strong>Height</strong>: 6 feet</li>
+		<li class="list-item"><strong>Yard Size</strong>: 1.2 acres</li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>
+	<div class="ren-rule">
+	  <h3><strong>Rules</strong></h3>
+	  <ul>
+	    <li class="list-item">Remove stucco from masonry surfaces where historically appropriate.</li>
+	    <li class="list-item">Avoid painting historically unpainted surfaces.&nbsp;</li>
+	    <li class="list-item">Repoint masonry with compatible mortar and matching joint profile and composition</li>
+	  </ul>
+	</div>
+	<div class="ren-rule">
+	  <h3><strong>Foundations</strong></h3>
+	  <ul>
+	    <li class="list-item">Concrete piers are a suitable replacement for cedar when original piers are deteriorated beyond repair.</li>
+	    <li class="list-item">Many limestone foundations can be restored rather than replaced.</li>
+	  </ul>
+	</div>
+	<h2 class="grant-total permits-req">Permits Required</h2>
+	<div class="w-row">
+	  <div class="w-col w-col-4">
+	    <div class="grant-blcok">
+	      <h3 class="grant-h3 top-grant-h3">ABC PERMIT</h3>
+	      <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;
+		<br>
+		<br>Go here to apply</p>
+	    </div>
+	  </div>
+	  <div class="w-col w-col-4">
+	    <div class="grant-blcok">
+	      <h3 class="grant-h3 top-grant-h3">XYZ PERMIT</h3>
+	      <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+		<br>
+		<br>Go here to apply</p>
+	    </div>
+	  </div>
+	  <div class="w-col w-col-4">
+	    <div class="grant-blcok">
+	      <h3 class="grant-h3 top-grant-h3">DEF PERMIT</h3>
+	      <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+		<br>
+		<br>Go here to apply</p>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <div class="w-row">
+	<div class="w-col w-col-3 progress-col"></div>
+	<div class="w-col w-col-9 main-col"></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <script type="text/javascript" src="js/jquery-waypoints/waypoints.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+     $(".roof-btn").click(function(){
+      $(".roof").fadeToggle("fast","swing");
+      $('.roof-btn').toggleClass("toggle-on");
+    });
+    $(".fence-btn").click(function(){
+      $(".fence").fadeToggle("fast","swing");
+      $('.fence-btn').toggleClass("toggle-on");
+    });
+    $(".repairs-btn").click(function(){
+      $(".chimney").fadeToggle("fast","swing");
+      $('.repairs-btn').toggleClass("toggle-on");
+    });
+    $(".addition-btn").click(function(){
+      $(".addition").fadeToggle("fast","swing");
+      $('.addition-btn').toggleClass("toggle-on");
+    });
+    $('.ha-waypoint').waypoint(function(direction) {
+
+      var $el = $(this);
+      var percentage = $el.data(direction === 'down' ? 'animateDown' : 'animateUp');
+      $('.waypoint').animate({
+	width: percentage,
+      }, {
+	duration: 300,
+      });
+      $('.progress-percent').html(percentage)
+      // $('.waypoint').removeClass("step-0 step-1").addClass(animClass);
+    }, { offset: '70%' });
+  });
+</script>
+</body>
+</html>
