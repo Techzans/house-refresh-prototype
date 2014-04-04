@@ -91,12 +91,11 @@ p {
   background-color: #ebebeb;
 }
 .bar.small {
-  width: 62%;
+  width: 0;
   margin-top: -12px;
   background-color: #a7ccd4;
 }
 .bar.small.zero {
-  width: 33%;
 }
 .navbar {
   position: fixed;
@@ -296,3 +295,6 @@ p {
 .roof-btn {position: relative;}
 .switch-btns {padding-left: 6px;}
 .switch-btns a {margin-right: 4px;}
+.bar.small.step-0 {width: 0;}
+.bar.small.step-1 {width: 50%;}
+.bar.small.step-2 {width: 100%;}
