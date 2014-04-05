@@ -309,3 +309,34 @@ p {
 .bar.small.step-0 {width: 0;}
 .bar.small.step-1 {width: 50%;}
 .bar.small.step-2 {width: 100%;}
+
+/* content controller */
+
+.content-control {
+  float: left;
+  position: fixed;
+  top:50px;
+  right:20px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  display:none;
+}
+
+.content-control-btn {
+  position: fixed;
+  float: right;
+  top: 20px;
+  right: 20px;
+}
+.control-btn2 {
+  color:green;
+}
+.control-btn {
+  color:#F0F0F5;
+}
+.control-container{
+  position:fixed;
+  top:20px;
+  right:20px;
+}
+
