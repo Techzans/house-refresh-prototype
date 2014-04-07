@@ -73,13 +73,13 @@ WebFont.load({
 
                     <div class="content-control">
                         <p class="small-text">Content:<br>
-                        <a class="control-btn2 control-permits-btn" href="#">permits</a><br>
-                        <a class="control-btn2 control-grants-btn" href="#">grants</a><br>
-                        <a class="control-btn2 control-labor-btn" href="#">labor</a></p>
+                        <a class="control-btn2 control-permits-btn" href="#void">permits</a><br>
+                        <a class="control-btn2 control-grants-btn" href="#void">grants</a><br>
+                        <a class="control-btn2 control-labor-btn" href="#void">labor</a></p>
                     </div>
 
                     <div class="content-control-btn">
-                        <a class="control-btn" href="#">setup</a>
+                        <a class="control-btn" href="#void">setup</a>
                     </div>
 
 					<!-- END Content block controler -->
@@ -270,7 +270,7 @@ WebFont.load({
 
                     <!-- BEGIN GRANTS -->
 
-                    <div class="chunk chuck-w-padding ha-waypoint" data-animate-down="67%" data-animate-up="50%" id="grants-available">
+                    <div class="chunk chuck-w-padding ha-waypoint hide-grants" data-animate-down="67%" data-animate-up="50%" id="grants-available">
                         <h1>There grants are available to help you</h1>
 
                         <h2 class="grant-total">Up to $6000 available</h2>
@@ -311,7 +311,7 @@ WebFont.load({
                     <!-- # END GRANTS -->
                     <!-- BEGIN LABOR -->
 
-                    <div class="chunk chuck-w-padding ha-waypoint" data-animate-down="84%" data-animate-up="67%" id="labor-available">
+                    <div class="chunk chuck-w-padding ha-waypoint hide-labor" data-animate-down="84%" data-animate-up="67%" id="labor-available">
                         <h1>This labor is available to build your renovation</h1>
 
                         <div class="w-row">
@@ -425,42 +425,52 @@ WebFont.load({
                         <div class="w-col w-col-9 main-col"></div>
                     </div>
                 </div>
-            </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script> <script src="js/webflow.js" type="text/javascript"></script> <script src="js/jquery-waypoints/waypoints.min.js" type="text/javascript"></script> <script type="text/javascript">
-$(document).ready(function() {
-            $(".control-btn").click(function(){
-            $(".content-control").fadeToggle("fast","swing");
-            });
-            $(".control-permits-btn").click(function(){
-            $(".hide-permits").fadeToggle("fast","swing");
-            $('.control-btn2').toggleClass("toggle-on");
-            });
-            $(".roof-btn").click(function(){
-            $(".roof").fadeToggle("fast","swing");
-            $('.roof-btn').toggleClass("toggle-on");
-            });
-            $(".fence-btn").click(function(){
-            $(".fence").fadeToggle("fast","swing");
-            $('.fence-btn').toggleClass("toggle-on");
-            });
-            $(".repairs-btn").click(function(){
-            $(".chimney").fadeToggle("fast","swing");
-            $('.repairs-btn').toggleClass("toggle-on");
-            });
-            $(".addition-btn").click(function(){
-            $(".addition").fadeToggle("fast","swing");
-            $('.addition-btn').toggleClass("toggle-on");
-            });
-            $('.ha-waypoint').waypoint(function(direction) {
+            </div>
 
-            var $el = $(this);
-            var percentage = $el.data(direction === 'down' ? 'animateDown' : 'animateUp');
-            $('.waypoint').animate({
-            width: percentage,
-            }, {
-            duration: 300,
-            });
-            $('.progress-percent').html(percentage)
-            // $('.waypoint').removeClass("step-0 step-1").addClass(animClass);
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script> <script src="js/webflow.js" type="text/javascript"></script> <script src="js/jquery-waypoints/waypoints.min.js" type="text/javascript"></script> <script type="text/javascript">
+			$(document).ready(function() {
+	            $(".control-btn").click(function(){
+		            $(".content-control").fadeToggle("fast","swing");
+	            });
+	            $(".control-permits-btn").click(function(){
+		            $(".hide-permits").fadeToggle("fast","swing");
+		            $('.control-permits-btn').toggleClass("toggle-on");
+	            });
+				$(".control-grants-btn").click(function(){
+		            $(".hide-grants").fadeToggle("fast","swing");
+		            $('.control-grants-btn').toggleClass("toggle-on");
+	            });
+        		$(".control-labor-btn").click(function(){
+		            $(".hide-labor").fadeToggle("fast","swing");
+		            $('.control-labor-btn').toggleClass("toggle-on");
+	            });
+	            $(".roof-btn").click(function(){
+		            $(".roof").fadeToggle("fast","swing");
+		            $('.roof-btn').toggleClass("toggle-on");
+	            });
+	            $(".fence-btn").click(function(){
+		            $(".fence").fadeToggle("fast","swing");
+		            $('.fence-btn').toggleClass("toggle-on");
+	            });
+	            $(".repairs-btn").click(function(){
+		            $(".chimney").fadeToggle("fast","swing");
+		            $('.repairs-btn').toggleClass("toggle-on");
+	            });
+	            $(".addition-btn").click(function(){
+		            $(".addition").fadeToggle("fast","swing");
+		            $('.addition-btn').toggleClass("toggle-on");
+	            });
+	            $('.ha-waypoint').waypoint(function(direction) {
+
+	            var $el = $(this);
+	            var percentage = $el.data(direction === 'down' ? 'animateDown' : 'animateUp');
+	            $('.waypoint').animate({
+	            width: percentage,
+	            }, {
+	            duration: 300,
+	            });
+	            $('.progress-percent').html(percentage)
+	            // $('.waypoint').removeClass("step-0 step-1").addClass(animClass);
             }, { offset: '70%' });
             });
             </script>
