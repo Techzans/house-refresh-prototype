@@ -215,7 +215,7 @@ p {
 .small-text {
   font-size: 16px;
 }
-.grant-total {
+.grant-total, .complete-message {
   padding: 11px;
   border-top: 6px solid #afc9a7;
   background-color: #dfedda;
