@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Tue Apr 01 2014 22:32:05 GMT+0000 (UTC) -->
 <html data-wf-site="532cb8f39ff60e067100012a">
 <head>
   <meta charset="utf-8">
@@ -21,24 +19,6 @@
   <script type="text/javascript" src="js/modernizr.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
 </head>
-<style type="text/css">
-.button.btn-outline.alt-button-outline.fence-btn.toggle-on, .button.btn-outline.fence-btn:hover {
-    background-color: #0074D9;
-    border-color: #0074D9;
-}
-.button.btn-outline.alt-button-outline.roof-btn.toggle-on, .button.btn-outline.roof-btn:hover {
-    background-color: #CF1B41;
-    border-color: #CF1B41;
-}
-.button.btn-outline.alt-button-outline.repairs-btn.toggle-on, .button.btn-outline.repairs-btn:hover {
-    background-color: #69579C;
-    border-color: #69579C;
-}
-.button.btn-outline.alt-button-outline.addition-btn.toggle-on, .button.btn-outline.addition-btn:hover {
-    background-color: #3D9970;
-    border-color: #3D9970;
-}
-</style>
 <body>
   <div>
   <div>
@@ -68,7 +48,7 @@
 	  <div class="bar small waypoint"></div>
 	</div>
 	<h6 class="progress-percent">0%</h6>
-	<p class="small-text">Approximate time 20 mins</p>
+	<p class="small-text"></p>
       </div>
       <div class="chunk chuck-w-padding first-chuck" id="select-renovations">
 	<h1>How would you like to improve your house?</h1>
@@ -88,12 +68,6 @@
 	    </div>
 	    <input class="w-input field" type="text" placeholder="Or something else? e.g. paint house, install fence, add garage" name="name" data-name="Name"></input><a class="btn-fill" href="#enter-address">next</a>
 	  </form>
-	  <div class="w-form-done">
-	    <p>Thank you! Your submission has been received!</p>
-	  </div>
-	  <div class="w-form-fail">
-	    <p>Oops! Something went wrong while submitting the form :(</p>
-	  </div>
 	</div>
       </div>
       <div class="chunk chuck-w-padding ha-waypoint" id="enter-address" data-animate-down="17%" data-animate-up="0%">
@@ -104,12 +78,6 @@
 	    <label class="label" for="name">Your address:</label>
 	    <input class="w-input field" type="text" placeholder="Enter your address" name="name" data-name="Name"></input><a class="btn-fill" href="#address-confirmed">submit</a>
 	  </form>
-	  <div class="w-form-done">
-	    <p>Thank you! Your submission has been received!</p>
-	  </div>
-	  <div class="w-form-fail">
-	    <p>Oops! Something went wrong while submitting the form :(</p>
-	  </div>
 	</div>
       </div>
     </div>
@@ -120,7 +88,7 @@
 	  <h3 class="alt-h1">555 Saint Mary's San Antonio, TX&nbsp;78204</h3>
 	  <div class="w-row about-house-row">
 	    <div class="w-col w-col-5">
-	      <img class="overlay-img" src="images/overlay.jpg" alt="5331ba9fee53fb987a000a65_overlay.jpg">
+	      <img class="overlay-img" src="images/overlay.jpg" alt="overlay">
 	    </div>
 	    <div class="w-col w-col-7">
               <p><strong>Your home has unique historic architecture.</strong> It features unique window stylings and parapets designed in the last century.
@@ -136,7 +104,7 @@
 	<div class="ren-rule">
 	  <h3><strong>Re-roofing</strong></h3>
 	  <ul>
-	    <li class="list-item">Replace missing or damaged sidingwith in-kind materials.</li>
+	    <li class="list-item">Replace missing or damaged siding with in-kind materials.</li>
 	    <li class="list-item">Repair or replace rotted sills and caulk around window and door frames.</li>
 	    <li class="list-item">Replace missing balustrades and rotted wood decking</li>
 	  </ul>
@@ -339,7 +307,6 @@
 	duration: 300,
       });
       $('.progress-percent').html(percentage)
-      // $('.waypoint').removeClass("step-0 step-1").addClass(animClass);
     }, { offset: '70%' });
   });
 </script>
